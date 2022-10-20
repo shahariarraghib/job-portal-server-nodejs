@@ -39,7 +39,10 @@ const jobPostSchema = mongoose.Schema(
       required: [true, "please provide your company Contact Number"],
     },
 
-    location: String,
+    location: {
+      type: String,
+      required: [true, "please provide your company location"],
+    },
 
     jobTitle: {
       type: String,
